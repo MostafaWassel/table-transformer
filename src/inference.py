@@ -910,7 +910,7 @@ def main():
             tokens = []
 
         if args.mode == 'recognize':
-            extracted_table = pipe.recognize(img, tokens, out_objects=args.objects, out_cells=args.csv,
+            extracted_table = pipe.recognize(img, tokens, out_objects=args.objects, out_cells=args.cells,
                                 out_html=args.html, out_csv=args.csv)
             print("Table(s) recognized.")
 
